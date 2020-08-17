@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: 'primary_font';
+  src: url("/fonts/primary font/etna-free-font-webfont.woff2") format("woff2"), url("/fonts/primary font/etna-free-font-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: primary_font;
+  letter-spacing: .15em;
+  font-size: 32px;
+  background-color: #333333;
+  color: #F4F4F4;
+}
+
+/*.container{
+    
+.nav{
+    z-index: 1;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    background-color: $primary-color;
+
+    padding:  .5em 1em .5em 1em;
+    
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    .logo{
+        width:12em;
+     }
+    .menu_icon{
+         img{
+         width: 100px;
+        }
+     }
+     ul{
+         font-size: 28px;
+         width: 700px;
+         display: flex;
+         justify-content: space-between;
+         list-style: none;
+         
+         a{
+            color: $white-color;
+            text-decoration: none;
+            span{
+                color: $yellow-color;
+            }
+        }
+    
+     }
+     
+}
+.main-pic{
+    position: relative;
+    top: 0px;
+    
+    img{
+    
+    width: 100vw;
+    object-fit: cover;
+    
+    }
+}
+
+}*/
+.container {
+  width: 100%;
+}
+
+.container .nav {
+  background-color: #333333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr .1fr;
+      grid-template-columns: 1fr 1fr .1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+  padding: 10px 50px 5px 50px;
+}
+
+.container .nav .logo .o {
+  max-width: 60px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.container .nav .logo span .logotext {
+  max-width: 400px;
+}
+
+.container .nav .logo:hover .o {
+  -webkit-transform: rotate(3600deg);
+          transform: rotate(3600deg);
+}
+
+.container .nav .nav-bar {
+  max-width: 400px;
+  min-width: 0px;
+}
+
+.container .nav .nav-bar ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 5px 0;
+}
+
+.container .nav .nav-bar ul li {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  list-style-type: none;
+}
+
+.container .nav .nav-bar ul li:hover {
+  background-color: #FFCC66;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.container .nav .nav-bar ul li:hover span {
+  color: #333333;
+}
+
+.container .nav .nav-bar ul li a {
+  text-decoration: none;
+  color: #F4F4F4;
+}
+
+.container .nav .nav-bar ul li a span {
+  color: #FFCC66;
+}
+
+.container .nav .menu-icon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4px 4px 4px;
+      grid-template-rows: 4px 4px 4px;
+  -ms-grid-columns: 60px;
+      grid-template-columns: 60px;
+  row-gap: 7px;
+  justify-items: center;
+}
+
+.container .nav .menu-icon .mbar {
+  background-color: #F4F4F4;
+  border-radius: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container .nav .menu-icon .mbar2 {
+  width: 70px;
+  rotate: 0deg;
+}
+
+.container .nav .menu-icon .mbar1 {
+  width: 50px;
+}
+
+.container .nav .menu-icon .mbar3 {
+  width: 50px;
+}
+
+.container .nav .menu-icon:hover .mbar2 {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.container .nav .menu-icon:hover .mbar1 {
+  -webkit-transform: translate(0, -14px);
+          transform: translate(0, -14px);
+}
+
+.container .nav .menu-icon:hover .mbar3 {
+  -webkit-transform: translate(0, 14px);
+          transform: translate(0, 14px);
+}
+/*# sourceMappingURL=style.css.map */

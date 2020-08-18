@@ -138,6 +138,7 @@ body {
 }
 
 .container .nav .nav-bar ul li {
+  font-family: primary_font;
   -webkit-transition: all 1s;
   transition: all 1s;
   list-style-type: none;

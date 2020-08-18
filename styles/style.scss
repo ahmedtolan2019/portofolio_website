@@ -62,45 +62,47 @@
         background-color: $primary-color;
         display: grid;
         grid-template-columns: 1fr 1fr .1fr;
-        
+
         align-items: center;
         align-content: center;
-        
-        justify-content:space-between;
+
+        justify-content: space-between;
         // border: 2px solid rgb(251, 73, 118);
         height: 10vh;
         padding: 10px 50px 5px 50px;
-        
-        
+
+
 
         .logo {
             //  border: 2px solid red;
-            
-            
+
+
 
             .o {
                 max-width: 60px;
                 transition: all 2s;
                 transform: rotate(0deg);
-                
+
             }
+
             span .logotext {
                 max-width: 400px;
-                
-                
+
+
             }
-            &:hover .o{
-              transform: rotate(360*10deg);
-}
+
+            &:hover .o {
+                transform: rotate(360*10deg);
+            }
 
         }
 
         .nav-bar {
             // border: 2px solid red;
-            
+
             max-width: 400px;
             min-width: 0px;
-            
+
 
             ul {
 
@@ -114,24 +116,27 @@
 
                 li {
                     transition: all 1s;
+
                     // border: 2px solid red;
-                    &:hover{
+                    &:hover {
                         background-color: $yellow-color;
                         padding: 4px 8px;
                         border-radius: 5px;
-                        
+
                     }
-                    &:hover span{
+
+                    &:hover span {
                         color: $primary-color;
                     }
 
-                    
+
                     list-style-type: none;
 
                     a {
                         text-decoration: none;
                         color: $white-color;
-                        span{
+
+                        span {
                             color: $yellow-color;
                         }
                     }
@@ -139,10 +144,10 @@
                 }
             }
         }
-        
-           
-        
-        .menu-icon{
+
+
+
+        .menu-icon {
             // border: 2px solid red;
             // max-width: 60px;
             // min-width: 50px;
@@ -151,41 +156,75 @@
             grid-template-columns: 60px;
             row-gap: 7px;
             justify-items: center;
-            
-            
-          
-            
-            
-            .mbar{
+
+
+
+
+
+            .mbar {
                 // border: 2px solid rgb(222, 246, 0);
-                
+
                 background-color: $white-color;
                 border-radius: 20px;
                 transition: all 1s;
 
             }
-            .mbar2{
+
+            .mbar2 {
                 width: 70px;
-                rotate: 0deg; 
+                rotate: 0deg;
             }
-            .mbar1{
-                width: 50px;  
+
+            .mbar1 {
+                width: 50px;
             }
-            .mbar3{
-                width: 50px;  
+
+            .mbar3 {
+                width: 50px;
             }
-            &:hover .mbar2{
-                transform: rotate(-225deg);
-            }
-            &:hover .mbar1{
-                transform: translate(0, -14px);
-            }
-            &:hover .mbar3{
-                transform: translate(0, 14px);
-            }
+
+            /*hover method to animate hamburgar icon*/
+
+            // &:hover .mbar2{
+            //     transform: rotate(-225deg);
+            // }
+            // &:hover .mbar1{
+            //     transform: translate(0, -14px);
+            // }
+            // &:hover .mbar3{
+            //     transform: translate(0, 14px);
+            // }
+
 
 
         }
+
+        /*start method to use fake click event with checkbox*/
+        #btn-control {
+            display: none;
+
+            .btn {
+                cursor: pointer;
+            }
+
+            &:checked+label .mbar2 {
+                transform: rotate(-225deg);
+            }
+
+            &:checked+label .mbar1 {
+                transform: translate(0, -14px);
+            }
+
+            &:checked+label .mbar3 {
+                transform: translate(0, 14px);
+            }
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+
+        /*end method to use fake click event with checkbox*/
 
 
     }
